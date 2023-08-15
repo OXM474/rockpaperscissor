@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="javascript.js"></script>
+  </head>
+  <body id="main">
+    <div>
+      <img
+        onclick="changeDL()"
+        class="btndl"
+        id="darkkk"
+        style="width: 10em"
+        src="./images/bx-sun.png"
+        alt="dark"
+      />
+    </div>
+    <div class="cen">
+      <div><h1>じゃんけんしましょ</h1></div>
+      <div class="choose"><p>選んで下さい。</p></div>
+      <div>
+        <div>
+          <button
+            id="btn-rock"
+            class="btn"
+            type="button"
+            onclick="selected('Rock !✊')"
+          >
+            ✊Rock
+          </button>
+          <button
+            id="btn-paper"
+            class="btn"
+            type="button"
+            onclick="selected('Paper !🖐️')"
+          >
+            🖐️Paper
+          </button>
+          <button
+            id="btn-scissor"
+            class="btn"
+            type="button"
+            onclick="selected('Scissor !✌️')"
+          >
+            ✌️Scissor
+          </button>
+        </div>
+      </div>
+      <div>
+        <p id="playerchoose"></p>
+        <p id="computerchoose"></p>
+        <p id="result"></p>
+        <p id="mark"></p>
+        <p id="final"></p>
+      </div>
+      <div id="rst" style="display: none">
+        <button id="restart" onclick="restart()">Restart</button>
+      </div>
+    </div>
+  </body>
+</html>

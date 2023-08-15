@@ -1,0 +1,34 @@
+.cen {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  border: 3px;
+  border-color: gold;
+  border-style: solid;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.choose {
+  font-size: 20px;
+  font-style: italic;
+}
+.btn {
+  height: 40px !important;
+  align-items: center !important;
+  font-size: 15pxk !important;
+}
+h1 {
+  font-style: "Noto Sans Japanese";
+}
+#mark {
+  font-weight: bold;
+}
+
+.btndl {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  border: none;
+}
