@@ -3,15 +3,19 @@ changeDL = () => {
   var im = document.getElementById("darkkk");
   var bd = document.getElementById("main");
   if (x === 1) {
-    (im.src = "./images/bx-moon.png"),
+    (im.src = "./images/bx-moon(White).png"),
       (x = 2),
-      (bd.style.backgroundColor = "#A0A0A0"),
-      (im.style.backgroundColor = "#A0A0A0");
+      (bd.style.backgroundColor = "#272829"),
+      (bd.style.color = "#FFF6E0"),
+      (im.style.backgroundColor = "#272829"),
+      (im.style.color = "#FFF6E0");
   } else if (x === 2) {
-    (im.src = "./images/bx-sun.png"),
+    (im.src = "./images/bx-sun(Black).png"),
       (x = 1),
-      (bd.style.backgroundColor = "#FFFFFF"),
-      (im.style.backgroundColor = "#FFFFFF");
+      (bd.style.backgroundColor = "#FFF6E0"),
+      (bd.style.color = "#272829"),
+      (im.style.backgroundColor = "#FFF6E0"),
+      (im.style.color = "#272829");
   }
 };
 
@@ -22,10 +26,8 @@ selected = (RPS) => {
   const choices = ["Rock !✊", "Paper !🖐️", "Scissor !✌️"];
   const computer = choices[Math.floor(Math.random() * 3)];
   let result = "";
-  // var rest = document.getElementById("restart");
-  // var document.getElementById("")
   if (RPS == computer) {
-    result = "tie";
+    result = "Tie";
   } else if (
     ((RPS == "Rock !✊") & (computer == "Scissor !✌️")) |
     ((RPS == "Paper !🖐️") & (computer == "Rock !✊")) |
